@@ -2,6 +2,7 @@
 .megaspacer {  margin-top: 300px; }
 .spacer {  margin-top: 100px; }
 .minispacer {  margin-top: 20px; }
+.minispacerhorizontal{margin-left: 5px;margin-right: 5px; }
 
 /* Clase color naranja principal de la página*/
 .naranja{
@@ -11,6 +12,20 @@
 .naranjilla{
     color: #FF5B0F;
 }
+
+/* Tipo de letra titulo */
+.titulomasvendidos{
+  font-family:  sans-serif;
+  font-weight: bold;
+}
+
+/* Iconos redes sociales */
+
+.contenedor-icono svg{
+width: 40px; ;
+height: 40px; ;
+}
+
 
 /* Clase Hover LINKS */
 .nav-link:hover {
@@ -47,9 +62,23 @@ html,body{
     user-select: none;
   }
 
+
+
   @media (min-width: 768px) {
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
     
   }
+
+  /* Cookies */
+
+  .fondocookies{
+    background-color: #343a40c7;
+  }
+
+  .quitarbannercookies{
+ display: none;
+  }
+
+  
