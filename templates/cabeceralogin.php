@@ -4,7 +4,12 @@
 <head>
 
   <meta charset="UTF-8">
+<<<<<<< HEAD
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+=======
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
@@ -14,7 +19,11 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
   <title>Unlimited Games</title>
 
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
 
 
 </head>
@@ -22,7 +31,11 @@
 
 <body>
 
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
 
   <!--BARRA DE NAVEGACION-->
 
@@ -48,11 +61,19 @@
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
+<<<<<<< HEAD
             <li><a href="" class="nav-link px-4 text-white">Inicio</a></li>
             <li><a href="" class="nav-link px-4 text-white">PC</a></li>
             <li><a href="" class="nav-link px-4 text-white">Play Station</a></li>
             <li><a href="" class="nav-link px-4 text-white">Xbox</a></li>
             <li><a href="" class="nav-link px-4 text-white">Ayuda</a></li>
+=======
+            <li><a href="#" class="nav-link px-4 text-white">Inicio</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">PC</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">Play Station</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">Xbox</a></li>
+            <li><a href="#" class="nav-link px-4 text-white">Ayuda</a></li>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
 
           </ul>
 
@@ -87,6 +108,7 @@
         <div class="col-sm-2">
 
           <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+<<<<<<< HEAD
             <!-- 
             <button type="button" class="btn btn-dark naranja px-4">Iniciar Sesión</button> -->
 
@@ -129,6 +151,15 @@
 
 
             ?>
+=======
+
+            <button type="button" class="btn btn-dark naranja px-4">Iniciar Sesión</button>
+
+            <div class="minispacerhorizontal"></div>
+
+            <button type="button" class="btn btn-dark naranja px-4">Registrarse</button>
+
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
           </div>
 
         </div>

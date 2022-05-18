@@ -1,4 +1,5 @@
 <?php 
+<<<<<<< HEAD
 session_start();
 if(isset($_SESSION["userId"])){
   include("./templates/cabeceralogin.php");
@@ -7,6 +8,12 @@ if(isset($_SESSION["userId"])){
 }
 ?>
 
+=======
+
+ include("./templates/cabeceralogout.php");   
+
+?>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
 
   <!-- COOKIES -->
 <div id="obj1">
@@ -58,7 +65,11 @@ if(isset($_SESSION["userId"])){
             <div class="carousel-caption text-start">
               <h1>Elden Ring</h1>
               <p>Ya a la venta en UnlimitedGames</p>
+<<<<<<< HEAD
               <p><a class="btn btn-lg btn-dark naranja" href="">Juégalo ya!</a></p>
+=======
+              <p><a class="btn btn-lg btn-dark naranja" href="#">Juégalo ya!</a></p>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
             </div>
           </div>
         </div>
@@ -69,7 +80,11 @@ if(isset($_SESSION["userId"])){
             <div class="carousel-caption">
               <h1>Resident Evil Village</h1>
               <p>Sumergete en un mundo escalofriante</p>
+<<<<<<< HEAD
               <p><a class="btn btn-lg btn-dark naranja" href="">Cómpralo ya!</a></p>
+=======
+              <p><a class="btn btn-lg btn-dark naranja" href="#">Cómpralo ya!</a></p>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
             </div>
           </div>
         </div>
@@ -80,7 +95,11 @@ if(isset($_SESSION["userId"])){
             <div class="carousel-caption text-end">
               <h1>Diablo IV</h1>
               <p>Uno de los juegos mas esperados para este 2023</p>
+<<<<<<< HEAD
               <p><a class="btn btn-lg btn-dark naranja" href="">Resérvalo ya!</a></p>
+=======
+              <p><a class="btn btn-lg btn-dark naranja" href="#">Resérvalo ya!</a></p>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
             </div>
           </div>
         </div>
@@ -123,7 +142,11 @@ if(isset($_SESSION["userId"])){
 
           <h2 class="naranjilla">PC</h2>
           <p class="text-white">Todos tenemos la necesidad de buscar los mejores juegos de PC en algún momento.</p>
+<<<<<<< HEAD
           <p><a class="btn btn-dark naranja" href="">Saber más &raquo;</a></p>
+=======
+          <p><a class="btn btn-dark naranja" href="#">Saber más &raquo;</a></p>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
 
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
@@ -133,7 +156,11 @@ if(isset($_SESSION["userId"])){
           <h2 class="naranjilla">Play Station</h2>
           <p class="text-white">Explora una generación de juegos más aclamados por la crítica, incluidos los éxitos en
             ventas de PlayStation Studios.</p>
+<<<<<<< HEAD
           <p><a class="btn btn-dark naranja" href="">Saber más &raquo;</a></p>
+=======
+          <p><a class="btn btn-dark naranja" href="#">Saber más &raquo;</a></p>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded-circle naranja" src="./img/iconoxbox.png" width="140" height="140">
@@ -141,7 +168,11 @@ if(isset($_SESSION["userId"])){
 
           <h2 class="naranjilla">Xbox</h2>
           <p class="text-white">Explora el catálogo completo de todos los juegos para la consola Xbox.</p>
+<<<<<<< HEAD
           <p><a class="btn btn-dark naranja" href="">Saber más &raquo;</a></p>
+=======
+          <p><a class="btn btn-dark naranja" href="#">Saber más &raquo;</a></p>
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -171,7 +202,11 @@ if(isset($_SESSION["userId"])){
             prose here.</p>
         </div>
         <div class="col-md-5">
+<<<<<<< HEAD
           <img class="border border-secondary rounded-3" src="./img/outlast2.png" width="100%" height="281.25px">
+=======
+          <img class="border border-secondary rounded-3" src="./img/outlast2.png" width="500px" height="281.25px">
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
 
         </div>
       </div>
@@ -186,7 +221,11 @@ if(isset($_SESSION["userId"])){
             how this layout would work with some actual real-world content in place.</p>
         </div>
         <div class="col-md-5 order-md-1">
+<<<<<<< HEAD
           <img class="border border-secondary rounded-3" src="./img/residentevilvillageinicio.png" width="100%"
+=======
+          <img class="border border-secondary rounded-3" src="./img/residentevilvillageinicio.png" width="500px"
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
             height="281.25px">
 
         </div>
@@ -203,7 +242,11 @@ if(isset($_SESSION["userId"])){
             some actual content. Your content.</p>
         </div>
         <div class="col-md-5">
+<<<<<<< HEAD
           <img class="border border-secondary rounded-3" src="./img/thelastofus2.jpg" width="100%" height="281.25px">
+=======
+          <img class="border border-secondary rounded-3" src="./img/thelastofus2.jpg" width="500px" height="281.25px">
+>>>>>>> 40e04761e09463df0a8115a899269a19dedf3c24
 
         </div>
       </div>
