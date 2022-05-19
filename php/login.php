@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="form-group margin">
-	<form class="" action="includes/login.inc.php" method="post">
+	<form class="" action="../includes/login.inc.php" method="post">
 		<center><label><h2>User login</h2></h2></label></center>
 		<label for="exampleInputEmail1">Email</label>
 		<input type="text" class="form-control" id="exampleInputEmail1" name="mailuid" placeholder="Username/Email..."><br>

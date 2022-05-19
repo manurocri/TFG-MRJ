@@ -95,7 +95,7 @@
             <!-- <button type="button" class="btFn btn-dark naranja px-4">Registrarse</button> -->
             <?php
             $usuario = $_SESSION["userId"];
-            require './includes/dbh.inc.php';
+            require 'includes/dbh.inc.php';
             $stmt = mysqli_stmt_init($conn);
             $sql = "SELECT uidusers FROM users WHERE idUsers=$usuario";
 
@@ -119,11 +119,11 @@
             if (isset($_SESSION["userId"])) {
               echo '<form class="" action="includes/logout.inc.php" method="post">
                       <button class="btn btn-dark naranja px-4" type="submit" name="logout-submit">
-                      Log Out
+                      Cerrar sesion
                       </button>
                     </form>';
             } else {
-              require 'login.php';
+              require 'php/login.php';
             }
 
 

@@ -47,7 +47,7 @@
   <strong>Cuidado! datos erroneos</strong>Por favor introduzca los datos correctos.
 </div><br><br>
 <center>
-<form action='includes/logout.inc.php' method='post'>
+<form action='../includes/logout.inc.php' method='post'>
 					<button type='submit' class='button button3' name='logout-submit'>Log Out</button>
 				</form>
                 </center>

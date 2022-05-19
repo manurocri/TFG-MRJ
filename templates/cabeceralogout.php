@@ -89,11 +89,11 @@
 
           <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
-            <button type="submit" class="btn btn-dark naranja px-4" ><a href="./login.php" >Iniciar Sesión</a></button>
+            <button type="submit" class="btn btn-dark naranja px-4" ><a href="php/login.php" >Iniciar Sesión</a></button>
 
             <div class="minispacerhorizontal"></div>
 
-            <button type="submit" class="btn btn-dark naranja px-4"><a href="./signup.php" >Registrarse</a></button>
+            <button type="submit" class="btn btn-dark naranja px-4"><a href="php/signup.php" >Registrarse</a></button>
 
           </div>
 

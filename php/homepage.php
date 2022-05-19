@@ -14,10 +14,10 @@
 	<center>
 	<br><h1>Welcome to our website</h1>
 	<h3>You are logged in</h3>
-	<form action='includes/logout.inc.php' method='post'>
+	<form action='../includes/logout.inc.php' method='post'>
 		<?php
 		$usuario= $_SESSION["userId"];
-		require './includes/dbh.inc.php';
+		require '../includes/dbh.inc.php';
 		$stmt=mysqli_stmt_init($conn);
 		$sql="SELECT uidusers FROM users WHERE idUsers=$usuario";
 		

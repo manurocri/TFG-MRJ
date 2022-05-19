@@ -59,7 +59,7 @@
 	 	 
 	 	?>
 
-	 	<form action="includes/signup.inc.php" method="post">
+	 	<form action="../includes/signup.inc.php" method="post">
 	 		<br><center><label><h2>Registro de usuarios</h2></h2></label></center>
 	 		<label for="name">Nombre de usuario</label>
 	 		<input type="text" class="form-control" id="exampleInputEmail1" name="uid" placeholder="Username"><br>
@@ -71,7 +71,7 @@
 	 		<input type="password" class="form-control" id="exampleInputPassword1" name="pwd-repeat" placeholder="Repeat Password"><br>
 	 		<button type="submit" class="btn btn-primary" name="signup-submit">Registrarme</button>
 	 	</form>
-	 	<center><br><big><a href="index.php">Login</a></big></center>
+	 	<center><br><big><a href="../index.php">Login</a></big></center>
 	 </main>
 </body>
 </html>
