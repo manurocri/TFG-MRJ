@@ -1,9 +1,12 @@
+<?php 
+ include("../templatesLoginRegistro/cabecera.php");   
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Registro de usuarios</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<style type="text/css">
+	<!-- <style type="text/css">
 		body{
 			margin:20px;
 		}
@@ -36,7 +39,7 @@
 		  color: white;
 		  background-color: #4CAF50;
 		}
-	</style>
+	</style> -->
 </head>
 <body>
 	<main>
@@ -75,3 +78,4 @@
 	 </main>
 </body>
 </html>
+<?php include("../templatesLoginRegistro/piedepagina.php"); ?>

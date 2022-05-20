@@ -1,3 +1,6 @@
+<?php 
+ include("../templatesLoginRegistro/cabecera.php");   
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,3 +26,4 @@
 	<center><big><a href="signup.php">Registrarme</a></big></center>
 </body>
 </html>
+<?php include("../templatesLoginRegistro/piedepagina.php"); ?>

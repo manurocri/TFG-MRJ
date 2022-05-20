@@ -1,9 +1,9 @@
 <?php 
 session_start();
 if(isset($_SESSION["userId"])){
-  include("./templates/cabeceralogin.php");
+  include("./templatesindex/cabeceralogin.php");
 } else{
- include("./templates/cabeceralogout.php");   
+ include("./templatesindex/cabeceralogout.php");   
 }
 ?>
 
@@ -224,7 +224,7 @@ if(isset($_SESSION["userId"])){
   </main>
 
 
-  <?php include("./templates/piedepagina.php"); ?>
+  <?php include("./templatesindex/piedepagina.php"); ?>
 
 
 
