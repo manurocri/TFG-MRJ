@@ -94,10 +94,10 @@
 
             <!-- <button type="button" class="btFn btn-dark naranja px-4">Registrarse</button> -->
             <?php
-            $usuario = $_SESSION["userId"];
+            $idUsuario = $_SESSION["userId"];
             require 'includes/dbh.inc.php';
             $stmt = mysqli_stmt_init($conn);
-            $sql = "SELECT uidusers FROM users WHERE idUsers=$usuario";
+            $sql = "SELECT uidusers FROM users WHERE idUsers=$idUsuario";
 
             mysqli_stmt_prepare($stmt, $sql);
             // mysqli_stmt_bind_param($stmt);
