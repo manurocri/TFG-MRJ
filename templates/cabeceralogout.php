@@ -4,7 +4,8 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
@@ -14,7 +15,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
   <title>Unlimited Games</title>
 
-
+  
 
 
 </head>
@@ -22,7 +23,7 @@
 
 <body>
 
-
+ 
 
   <!--BARRA DE NAVEGACION-->
 
@@ -48,6 +49,7 @@
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
+            <li><a href="" class="nav-link px-4 text-white">Inicio</a></li>
             <li><a href="" class="nav-link px-4 text-white">PC</a></li>
             <li><a href="" class="nav-link px-4 text-white">Play Station</a></li>
             <li><a href="" class="nav-link px-4 text-white">Xbox</a></li>
@@ -87,15 +89,11 @@
 
           <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
-            <form action="./php/login.php" method="post">
-              <button type="submit" class="btn btn-dark naranja px-4">Iniciar Sesión</button>
-            </form>
+            <button type="submit" class="btn btn-dark naranja px-4 text-reset" ><a class="text-reset colorgristexto" href="php/login.php" >Iniciar Sesión</a></button>
 
             <div class="minispacerhorizontal"></div>
 
-            <form action="./php/signup.php" method="post">
-              <button type="submit" class="btn btn-dark naranja px-4">Registrarse</button>
-            </form>
+            <button type="submit" class="btn btn-dark naranja px-4"><a class="text-reset colorgristexto" href="php/signup.php" >Registrarse</a></button>
 
           </div>
 

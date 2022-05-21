@@ -86,17 +86,48 @@
         <div class="col-sm-2">
 
           <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-
-            <form action="./php/login.php" method="post">
-              <button type="submit" class="btn btn-dark naranja px-4">Iniciar Sesión</button>
-            </form>
+            <!-- 
+            <button type="button" class="btn btn-dark naranja px-4">Iniciar Sesión</button> -->
 
             <div class="minispacerhorizontal"></div>
 
-            <form action="./php/signup.php" method="post">
-              <button type="submit" class="btn btn-dark naranja px-4">Registrarse</button>
-            </form>
+            <!-- <button type="button" class="btFn btn-dark naranja px-4">Registrarse</button> -->
+            <?php
+            $usuario = $_SESSION["userId"];
+            require 'includes/dbh.inc.php';
+            $stmt = mysqli_stmt_init($conn);
+            $sql = "SELECT uidusers FROM users WHERE idUsers=$usuario";
 
+            mysqli_stmt_prepare($stmt, $sql);
+            // mysqli_stmt_bind_param($stmt);
+
+            mysqli_stmt_execute($stmt);
+            // mysqli_stmt_store_result($stmt);
+
+            $resultado = mysqli_stmt_get_result($stmt);
+
+            while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+              foreach ($fila as $f) {
+                echo "<a class='nav-link px-4 text-white'>$f</a> ";
+              }
+              print "\n";
+            }
+
+
+
+            if (isset($_SESSION["userId"])) {
+              echo '<form class="" action="includes/logout.inc.php" method="post">
+                      <button class="btn btn-dark naranja px-4" type="submit" name="logout-submit">
+                      Cerrar sesion
+                      </button>
+                    </form>';
+            } else {
+              require 'php/login.php';
+            }
+
+
+
+            ?>
           </div>
 
         </div>
