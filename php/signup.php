@@ -37,7 +37,7 @@
                 </div>
                 <div class="card-body w-100">
 
-                    <form name="login" action="../includes/login.inc.php" method="post">
+                    <form action="../includes/signup.inc.php" method="post">
 
 
                         <div class="input-group form-group mt-3">
@@ -73,7 +73,7 @@
 
 						<div class="form-group mt-3">
 
-						<button type="submit" class="btn float-end w-100 btn btn-dark naranja px-4" name="login-submit">Crear cuenta</button> 
+						<button type="submit" class="btn float-end w-100 btn btn-dark naranja px-4" name="signup-submit">Crear cuenta</button> 
 
                         </div>
                     </form>

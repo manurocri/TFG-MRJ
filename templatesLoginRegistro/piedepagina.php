@@ -48,9 +48,9 @@
       <ul class="col-3 list-unstyled col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
         <li class="font-weight-bold text-uppercase naranjilla">Plataformas</li>
-        <li><a href="" class="text-reset colorgristexto">Play Station</a></li>
-        <li><a href="" class="text-reset colorgristexto">Xbox</a></li>
-        <li><a href="" class="text-reset colorgristexto">PC</a></li>
+        <li><a href="../templatesPlataformas/PlataformaPlayStation.php" class="text-reset colorgristexto">PlayStation</a></li>
+        <li><a href="../templatesPlataformas/PlataformaXbox.php" class="text-reset colorgristexto">Xbox</a></li>
+        <li><a href="../templatesPlataformas/PlataformaPc.php" class="text-reset colorgristexto">PC</a></li>
 
       </ul>
     </div>

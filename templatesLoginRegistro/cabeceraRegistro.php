@@ -49,10 +49,10 @@
 
           <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
-            <li><a href="" class="nav-link px-4 text-white">PC</a></li>
-            <li><a href="" class="nav-link px-4 text-white">Play Station</a></li>
-            <li><a href="" class="nav-link px-4 text-white">Xbox</a></li>
-            <li><a href="" class="nav-link px-4 text-white">Ayuda</a></li>
+            <li><a href="../templatesPlataformas/PlataformaPc.php" class="nav-link px-4 text-white">PC</a></li>
+            <li><a href="../templatesPlataformas/PlataformaPlayStation.php" class="nav-link px-4 text-white">PlayStation</a></li>
+            <li><a href="../templatesPlataformas/PlataformaXbox.php" class="nav-link px-4 text-white">Xbox</a></li>
+            <li><a href="../templatesAyuda/ayuda.php" class="nav-link px-4 text-white">Ayuda</a></li>
 
           </ul>
 

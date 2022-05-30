@@ -22,7 +22,7 @@
 
 
       <a href="index.php" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-        <img src="img/logo.png" alt="logo Unlimited Games" width="200" height="120" class="mr-2">
+        <img src="../img/logo.png" alt="logo Unlimited Games" width="200" height="120" class="mr-2">
       </a>
 
     </div>
@@ -48,9 +48,9 @@
       <ul class="col-3 list-unstyled col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
         <li class="font-weight-bold text-uppercase naranjilla">Plataformas</li>
-        <li><a href="./templatesPlataformas/PlataformaPlayStation.php" class="text-reset colorgristexto">PlayStation</a></li>
-        <li><a href="./templatesPlataformas/PlataformaXbox.php" class="text-reset colorgristexto">Xbox</a></li>
-        <li><a href="./templatesPlataformas/PlataformaPc.php" class="text-reset colorgristexto">PC</a></li>
+        <li><a href="../templatesPlataformas/PlataformaPlayStation.php" class="text-reset colorgristexto">PlayStation</a></li>
+        <li><a href="../templatesPlataformas/PlataformaXbox.php" class="text-reset colorgristexto">Xbox</a></li>
+        <li><a href="../templatesPlataformas/PlataformaPc.php" class="text-reset colorgristexto">PC</a></li>
 
       </ul>
     </div>
@@ -196,7 +196,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
 crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="./js/cookies.js"></script>
 </body>
 
 </html>
