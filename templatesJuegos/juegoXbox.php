@@ -33,7 +33,7 @@ if(isset($_SESSION["userId"])){
         <h1 class="naranjilla titulomasvendidos">Nombre del juego</h1>
         <div class="spacer"></div>
         <div class="row align-items-center">
-          <h1 class="text-white titulomasvendidos">P.V.P <small>0.00€</small></h1>
+          <h1 class="text-white titulomasvendidos">0.00<small>€</small></h1>
         
           </div>
 
@@ -51,7 +51,7 @@ if(isset($_SESSION["userId"])){
     <div class="p-5 mb-4 bg-dark rounded-5">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold naranjilla">Descripción</h1>
-        <p class="col-md-8 fs-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod felis id maximus tincidunt. Phasellus consequat lacus dolor, id pulvinar mauris malesuada vel.</p>
+        <p class="col-md fs-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod felis id maximus tincidunt. Phasellus consequat lacus dolor, id pulvinar mauris malesuada vel.</p>
       </div>
     </div>
     

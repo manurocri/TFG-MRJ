@@ -19,7 +19,7 @@ if(isset($_SESSION["userId"])){
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png'); ">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/eldenringinicio.jpg'); ">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
           <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
             <ul class="d-flex list-unstyled mt-auto">
