@@ -17,10 +17,16 @@ if (isset($_SESSION["userId"])) {
 <div class="container px-4 pt-5" id="custom-cards">
   <h1 class="pb-2 border-bottom text-white titulomasvendidos">PC</h1>
 
+<<<<<<< HEAD
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     <div class="col">
       <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/eldenringinicio.jpg'); ">
         <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=1">
+=======
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/eldenringinicio.jpg'); ">
+>>>>>>> 6c41edea1c98895f89cb787d4385b2d2ff06a078
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
               </h3>
