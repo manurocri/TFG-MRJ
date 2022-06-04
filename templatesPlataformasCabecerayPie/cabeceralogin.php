@@ -108,7 +108,7 @@
 
             while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
               foreach ($fila as $f) {
-                echo "<a class='nav-link px-4 text-white'>$f</a> ";
+                echo "<a class='nav-link disabled px-4 text-white'>$f</a> ";
               }
               print "\n";
             }

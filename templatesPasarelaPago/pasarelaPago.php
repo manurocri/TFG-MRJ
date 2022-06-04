@@ -23,58 +23,67 @@ if(isset($_SESSION["userId"])){
     
 
           <hr class="my-1">
-<!-- 
-          <h4 class="mb-3">Payment</h4>
-
-          <div class="my-3">
-            <div class="form-check">
-              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-              <label class="form-check-label text-white" for="credit">Credit card</label>
-            </div>
-            <div class="form-check">
-              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label text-white" for="debit">Debit card</label>
-            </div>
-            <div class="form-check">
-              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-              <label class="form-check-label text-white" for="paypal">PayPal</label>
-            </div>
-          </div> -->
 
           <div class="row gy-3">
+
             <div class="col-md-6">
               <label for="cc-name" class="form-label text-white">Nombre en la tarjeta</label>
               <input type="text" class="form-control" id="cc-name" placeholder="" required>
-             
-              <div class="invalid-feedback">
-                El nombre de la tarjeta es necesario
-              </div>
+              
             </div>
 
             <div class="col-md-6">
               <label for="cc-number" class="form-label text-white">Número de la tarjeta</label>
               <input type="text" class="form-control" id="cc-number" placeholder="" required>
-              <div class="invalid-feedback">
-                El número de la tarjeta es necesario
-              </div>
+              
             </div>
+
+            </div>
+
+            <div class="minispacer"></div>
+
+          <div class="row">
 
             <div class="col-md-3">
               <label for="cc-expiration" class="form-label text-white">Fecha de expiración</label>
               <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-              <div class="invalid-feedback">
-                La fecha de expiración de la tarjeta es necesaria
-              </div>
+             
             </div>
 
             <div class="col-md-3">
               <label for="cc-cvv" class="form-label text-white">CVC/CVV</label>
               <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-              <div class="invalid-feedback">
-                El CVV es necesario
-              </div>
+              
             </div>
+  
+          <div class="col-md-3">
+
+          <div class="minispacer"></div>
+
+            <h1 class="naranjilla titulomasvendidos">Elden Ring</h1>
+            
           </div>
+
+
+          <div class="col-md-2">
+
+          <div class="minispacer"></div>
+
+            <h1 class="naranjilla titulomasvendidos">00.0€</h1>
+            
+          </div>
+
+
+          </div>
+
+
+          
+         
+
+
+
+
+
 
           <hr class="my-4">
 
@@ -93,5 +102,7 @@ if(isset($_SESSION["userId"])){
 
 
 </div>
+
+<div class="spacer"></div>
 
 <?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>

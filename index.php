@@ -63,12 +63,12 @@ if(isset($_SESSION["userId"])){
           </div>
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./img/residentevilvillageinicio.png" height="">
+          <img class="d-block w-100" src="./img/pc/ages.jpg" height="">
 
           <div class="container">
             <div class="carousel-caption">
-              <h1>Resident Evil Village</h1>
-              <p>Sumergete en un mundo escalofriante</p>
+              <h1>Age Of Empires IV</h1>
+              <p>Un increible juego de estrategia</p>
               <p><a class="btn btn-lg btn-dark naranja" href="">Cómpralo ya!</a></p>
             </div>
           </div>
