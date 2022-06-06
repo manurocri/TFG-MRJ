@@ -50,7 +50,6 @@ if (isset($_SESSION["userId"])) {
 
       <div class="col-md-6 align-items-center">
         <div class="h-100 p-5 bg-dark border-dark rounded-5">
-<<<<<<< HEAD
           <h1 class="naranjilla titulomasvendidos">
             <?php
             $idJuego = $_GET['idJ'];
@@ -99,18 +98,21 @@ if (isset($_SESSION["userId"])) {
                 €</small>
             </h1>
 
-=======
-        <h1 class="naranjilla titulomasvendidos">Nombre del juego</h1>
-        <div class="spacer"></div>
-        <div class="row align-items-center">
-        <h1 class="text-white titulomasvendidos">0.00<small>€</small></h1>
-        
->>>>>>> 6c41edea1c98895f89cb787d4385b2d2ff06a078
           </div>
 
           <div class="minispacer"></div>
 
-          <a href="../templatesPasarelaPago/pasarelaPago.php" class="text-reset">
+          <?php 
+          $idJ = $_GET['idJ'];
+
+          if(isset($_SESSION["userId"])){
+            echo '<a href="../templatesPasarelaPago/pasarelaPago.php?idJ=',$idJ,'" class="text-reset">';
+            }else {
+              echo '<a href="../php/login.php" class="text-reset">';
+            }
+          ?>
+          
+
             <button class="btn btn-lg btn-dark naranja" type="button">Comprar Juego</button>
           </a>
 
@@ -122,7 +124,6 @@ if (isset($_SESSION["userId"])) {
     <div class="p-5 mb-4 bg-dark rounded-5">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold naranjilla">Descripción</h1>
-<<<<<<< HEAD
         <p class="col-md fs-4 text-white">
         <?php
           $lang=$_GET['lang'];
@@ -151,9 +152,6 @@ if (isset($_SESSION["userId"])) {
           }
           ?>
         </p>
-=======
-        <p class="col-md fs-4 text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod felis id maximus tincidunt. Phasellus consequat lacus dolor, id pulvinar mauris malesuada vel.</p>
->>>>>>> 6c41edea1c98895f89cb787d4385b2d2ff06a078
       </div>
     </div>
 

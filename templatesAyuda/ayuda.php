@@ -1,9 +1,9 @@
 <?php 
 session_start();
 if(isset($_SESSION["userId"])){
-  include("../templatesPlataformasCabecerayPie/cabeceralogin.php");
+  include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogin.php");
 } else{
- include("../templatesPlataformasCabecerayPie/cabeceralogout.php");   
+ include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogout.php");   
 }
 ?>
 

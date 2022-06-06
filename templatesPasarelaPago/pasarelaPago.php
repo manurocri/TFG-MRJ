@@ -1,9 +1,9 @@
 <?php 
 session_start();
 if(isset($_SESSION["userId"])){
-  include("../templatesPlataformasCabecerayPie/cabeceralogin.php");
+  include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogin.php");
 } else{
- include("../templatesPlataformasCabecerayPie/cabeceralogout.php");   
+ include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogout.php");   
 }
 ?>
 
@@ -34,7 +34,7 @@ if(isset($_SESSION["userId"])){
 
             <div class="col-md-6">
               <label for="cc-number" class="form-label text-white">Número de la tarjeta</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <input type="number" class="form-control" id="cc-number" placeholder="" required>
               
             </div>
 
@@ -46,13 +46,13 @@ if(isset($_SESSION["userId"])){
 
             <div class="col-md-3">
               <label for="cc-expiration" class="form-label text-white">Fecha de expiración</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <input type="number" class="form-control" id="cc-expiration" placeholder="" required>
              
             </div>
 
             <div class="col-md-3">
               <label for="cc-cvv" class="form-label text-white">CVC/CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <input type="number" class="form-control" id="cc-cvv" placeholder="" required>
               
             </div>
   
@@ -60,7 +60,28 @@ if(isset($_SESSION["userId"])){
 
           <div class="minispacer"></div>
 
-            <h1 class="naranjilla titulomasvendidos">Elden Ring</h1>
+            <h1 class="naranjilla titulomasvendidos">
+            <?php
+            $idJuego = $_GET['idJ'];
+
+            require '../includes/dbh.inc.php';
+            $stmt = mysqli_stmt_init($conn);
+
+            $sql = "SELECT nombreJuego FROM productos WHERE id=$idJuego";
+
+            mysqli_stmt_prepare($stmt, $sql);
+
+            mysqli_stmt_execute($stmt);
+
+            $resultado = mysqli_stmt_get_result($stmt);
+
+            while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+              foreach ($fila as $f) {
+                echo '<small>',$f,'</small>';
+              }
+            }
+            ?>
+            </h1>
             
           </div>
 
@@ -69,7 +90,27 @@ if(isset($_SESSION["userId"])){
 
           <div class="minispacer"></div>
 
-            <h1 class="naranjilla titulomasvendidos">00.0€</h1>
+            <h1 class="naranjilla titulomasvendidos">
+            <?php
+                $idJuego = $_GET['idJ'];
+                require '../includes/dbh.inc.php';
+                $stmt = mysqli_stmt_init($conn);
+                $sql = "SELECT precio FROM productos WHERE id=$idJuego";
+
+                mysqli_stmt_prepare($stmt, $sql);
+
+                mysqli_stmt_execute($stmt);
+
+                $resultado = mysqli_stmt_get_result($stmt);
+
+                while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                  foreach ($fila as $f) {
+                    echo '<small>',$f,'</small>';
+                  }
+                }
+                ?>
+                €
+            </h1>
             
           </div>
 

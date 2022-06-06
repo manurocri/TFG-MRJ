@@ -63,17 +63,37 @@
 
           <div class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 
-            <a href="" class="text-decoration-none px-2">
-              <img src="../img/iconobanderaespaña.png" class="rounded-circle" alt="Español" width="30px" height="30px">
+
+            <?php
+            $idJ = $_GET['idJ'];
+            echo '<a href="?lang=es&idJ=', $idJ, '" class="text-decoration-none px-2">';
+            ?>
+            <img src="../img/iconobanderaespaña.png" class="rounded-circle" alt="Español" width="30px" height="30px">
+
             </a>
-            <a href="" class="text-decoration-none px-2">
-              <img src="../img/iconobanderainglaterra.png" class="rounded-circle" alt="Inglés" width="30px" height="30px">
+            <?php
+            $idJ = $_GET['idJ'];
+            echo '<a href="?lang=en&idJ=', $idJ, '" class="text-decoration-none px-2">';
+            ?>
+
+            <img src="../img/iconobanderainglaterra.png" class="rounded-circle" alt="Inglés" width="30px" height="30px">
+
             </a>
-            <a href="" class="text-decoration-none px-2">
-              <img src="../img/iconobanderafrancia.png" class="rounded-circle" alt="Francés" width="30px" height="30px">
+            <?php
+            $idJ = $_GET['idJ'];
+            echo '<a href="?lang=fr&idJ=', $idJ, '" class="text-decoration-none px-2">';
+            ?>
+
+            <img src="../img/iconobanderafrancia.png" class="rounded-circle" alt="Francés" width="30px" height="30px">
+
             </a>
-            <a href="" class="text-decoration-none px-2">
-              <img src="../img/iconobanderaalemania.png" class="rounded-circle" alt="Alemán" width="30px" height="30px">
+            <?php
+            $idJ = $_GET['idJ'];
+            echo '<a href="?lang=gr&idJ=', $idJ, '" class="text-decoration-none px-2">';
+            ?>
+
+            <img src="../img/iconobanderaalemania.png" class="rounded-circle" alt="Alemán" width="30px" height="30px">
+
             </a>
 
           </div>

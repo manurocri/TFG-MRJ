@@ -1,9 +1,9 @@
 <?php
 session_start();
 if (isset($_SESSION["userId"])) {
-  include("../templatesPlataformasCabecerayPie/cabeceralogin.php");
+  include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogin.php");
 } else {
-  include("../templatesPlataformasCabecerayPie/cabeceralogout.php");
+  include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogout.php");
 }
 ?>
 
@@ -17,16 +17,11 @@ if (isset($_SESSION["userId"])) {
 <div class="container px-4 pt-5" id="custom-cards">
   <h1 class="pb-2 border-bottom text-white titulomasvendidos">PC</h1>
 
-<<<<<<< HEAD
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/eldenringinicio.jpg'); ">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=1">
-=======
-    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=1" style="text-decoration: none;">
         <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/eldenringinicio.jpg'); ">
->>>>>>> 6c41edea1c98895f89cb787d4385b2d2ff06a078
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
               </h3>
@@ -76,13 +71,15 @@ if (isset($_SESSION["userId"])) {
                 </li>
               </ul>
           </div>
-        </a>
-      </div>
+
+        </div>
+      </a>
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/Cyberpunk.jpg');">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=10">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=10" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/Cyberpunk.jpg');">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -133,13 +130,15 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
+
+        </div>
+      </a>
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/call3.jpg');">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=5">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=5" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/call3.jpg');">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -190,8 +189,9 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
+
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -204,8 +204,9 @@ if (isset($_SESSION["userId"])) {
 
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/diablo.jpeg'); ">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=55">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=55" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/diablo.jpeg'); ">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -256,13 +257,15 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
+
+        </div>
+      </a>
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/fifa.jpg');">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=6">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=6" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/fifa.jpg');">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
@@ -312,13 +315,15 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
+
+        </div>
+      </a>
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/dying.jpg');">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=3">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=3" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/dying.jpg');">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -369,9 +374,9 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
-      
+
+        </div>
+      </a>
     </div>
   </div>
 </div>
@@ -383,8 +388,9 @@ if (isset($_SESSION["userId"])) {
 
   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/ages.jpg'); ">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=15">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=15" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/ages.jpg'); ">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -435,13 +441,15 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
+
+        </div>
+      </a>
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/sims.png');">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=4">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=4" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/sims.png');">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <ul class="d-flex list-unstyled mt-auto">
               <li class="me-auto">
@@ -491,13 +499,15 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
+
+        </div>
+      </a>
     </div>
 
     <div class="col">
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/callGhost.jpg');">
-        <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=9">
+      <a href="../templatesJuegos/juegoPc.php?lang=es&idJ=9" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/callGhost.png');">
+
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -548,9 +558,9 @@ if (isset($_SESSION["userId"])) {
               </li>
             </ul>
           </div>
-        </a>
-      </div>
 
+        </div>
+      </a>
     </div>
 
   </div>
