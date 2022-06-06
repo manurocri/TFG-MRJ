@@ -32,7 +32,7 @@ if (isset($_SESSION["userId"])) {
                   </svg>
                 </li>
                 <li class="d-flex align-items-center me-3">
-                  <small>
+                  <small class="bg-dark text-white rounded-5">
                     <?php
                     require '../includes/dbh.inc.php';
                     $stmt = mysqli_stmt_init($conn);
@@ -50,7 +50,7 @@ if (isset($_SESSION["userId"])) {
                   </small>
                 </li>
                 <li class="d-flex align-items-center">
-                  <small><?php
+                  <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -88,7 +88,7 @@ if (isset($_SESSION["userId"])) {
                   <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
                 </svg>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -106,7 +106,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';
@@ -147,7 +147,7 @@ if (isset($_SESSION["userId"])) {
                   <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z" />
                 </svg>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -165,7 +165,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';
@@ -216,7 +216,7 @@ if (isset($_SESSION["userId"])) {
                 </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -234,7 +234,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';
@@ -274,7 +274,7 @@ if (isset($_SESSION["userId"])) {
                 </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -292,7 +292,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';
@@ -333,7 +333,7 @@ if (isset($_SESSION["userId"])) {
                 </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -351,7 +351,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';
@@ -400,7 +400,7 @@ if (isset($_SESSION["userId"])) {
                 </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -418,7 +418,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';
@@ -458,7 +458,7 @@ if (isset($_SESSION["userId"])) {
                 </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -476,7 +476,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';
@@ -517,7 +517,7 @@ if (isset($_SESSION["userId"])) {
                 </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
@@ -535,7 +535,7 @@ if (isset($_SESSION["userId"])) {
                 </small>
               </li>
               <li class="d-flex align-items-center">
-                <small>
+                <small class="bg-dark text-white rounded-5">
                   <?php
 
                   require '../includes/dbh.inc.php';

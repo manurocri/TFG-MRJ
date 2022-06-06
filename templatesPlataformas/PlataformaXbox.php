@@ -30,7 +30,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=31";
@@ -46,7 +46,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -82,7 +82,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=21";
@@ -98,7 +98,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -134,7 +134,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=20";
@@ -150,7 +150,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -195,7 +195,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=32";
@@ -211,7 +211,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -247,7 +247,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=19";
@@ -263,7 +263,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -299,7 +299,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=35";
@@ -315,7 +315,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -359,7 +359,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=30";
@@ -375,7 +375,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -411,7 +411,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=33";
@@ -427,7 +427,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);
@@ -463,7 +463,7 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
                   require '../includes/dbh.inc.php';
                   $stmt = mysqli_stmt_init($conn);
                   $sql = "SELECT nombrejuego FROM productos WHERE id=28";
@@ -479,7 +479,7 @@ if(isset($_SESSION["userId"])){
                   ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small><?php
+                <small class="bg-dark text-white rounded-5"><?php
 
                           require '../includes/dbh.inc.php';
                           $stmt = mysqli_stmt_init($conn);

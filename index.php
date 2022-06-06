@@ -16,7 +16,7 @@ if (isset($_SESSION["userId"])) {
         <div class="col-12 col-md text-center text-md-start ">
           <span class="text-white">
             Esta web utiliza cookies propias y/o de terceros para para que la web funcione, realizar estadísticas,
-            cargar imágenes y vídeos. Antes de aceptarlas te invitamos a leer nuestra <a class="text-decoration-none naranjilla" href="/cookies">política de cookies</a>.
+            cargar imágenes y vídeos. Antes de aceptarlas te invitamos a leer nuestra <a class="text-decoration-none naranjilla" href="./templatesAyuda/cookies.php">política de cookies</a>.
           </span>
         </div>
         <div class="col-12 col-md-auto d-flex justify-content-center align-items-center  py-3 py-md-0">
@@ -56,7 +56,7 @@ if (isset($_SESSION["userId"])) {
           <div class="carousel-caption text-start">
             <h1>Elden Ring</h1>
             <p>Ya a la venta en UnlimitedGames</p>
-            <p><a class="btn btn-lg btn-dark naranja" href="">Juégalo ya!</a></p>
+            <p><a class="btn btn-lg btn-dark naranja" href="./templatesJuegos/juegoPc.php?lang=es&idJ=1">Juégalo ya!</a></p>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@ if (isset($_SESSION["userId"])) {
           <div class="carousel-caption text-end">
             <h1>Diablo IV</h1>
             <p>Uno de los juegos mas esperados para este 2023</p>
-            <p><a class="btn btn-lg btn-dark naranja" href="">Resérvalo ya!</a></p>
+            <p><a class="btn btn-lg btn-dark naranja" href="./templatesJuegos/juegoPc.php?lang=es&idJ=55">Compralo ya!</a></p>
           </div>
         </div>
       </div>
@@ -121,7 +121,7 @@ if (isset($_SESSION["userId"])) {
 
         <h2 class="naranjilla">PC</h2>
         <p class="text-white">Todos tenemos la necesidad de buscar los mejores juegos de PC en algún momento.</p>
-        <p><a class="btn btn-dark naranja" href="">Saber más &raquo;</a></p>
+        <p><a class="btn btn-dark naranja" href="./templatesPlataformas/PlataformaPc.php">Saber más &raquo;</a></p>
 
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
@@ -131,7 +131,7 @@ if (isset($_SESSION["userId"])) {
         <h2 class="naranjilla">Play Station</h2>
         <p class="text-white">Explora una generación de juegos más aclamados por la crítica, incluidos los éxitos en
           ventas de PlayStation Studios.</p>
-        <p><a class="btn btn-dark naranja" href="">Saber más &raquo;</a></p>
+        <p><a class="btn btn-dark naranja" href="./templatesPlataformas/PlataformaPlayStation.php">Saber más &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
         <img class="bd-placeholder-img rounded-circle naranja" src="./img/iconoxbox.png" width="140" height="140">
@@ -139,7 +139,7 @@ if (isset($_SESSION["userId"])) {
 
         <h2 class="naranjilla">Xbox</h2>
         <p class="text-white">Explora el catálogo completo de todos los juegos para la consola Xbox.</p>
-        <p><a class="btn btn-dark naranja" href="">Saber más &raquo;</a></p>
+        <p><a class="btn btn-dark naranja" href="./templatesPlataformas/PlataformaXbox.php">Saber más &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
