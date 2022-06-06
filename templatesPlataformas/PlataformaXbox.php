@@ -1,9 +1,9 @@
 <?php 
 session_start();
 if(isset($_SESSION["userId"])){
-  include("../templatesPlataformasCabecerayPie/cabeceralogin.php");
+  include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogin.php");
 } else{
- include("../templatesPlataformasCabecerayPie/cabeceralogout.php");   
+ include("../templatesPlataformasCabecerayPieListaJuegos/cabeceralogout.php");   
 }
 ?>
 
@@ -19,7 +19,8 @@ if(isset($_SESSION["userId"])){
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png'); ">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=31" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/crash4.jpg'); ">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -29,18 +30,49 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=31";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=31";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png');">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=21" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/binarydomain.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -50,18 +82,49 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=21";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=21";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png');">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=20" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/darkvoid.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -71,14 +134,44 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=20";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=20";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
     </div>
   </div>
@@ -91,7 +184,8 @@ if(isset($_SESSION["userId"])){
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png'); ">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=32" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/marvelavengers.jpg'); ">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -101,18 +195,49 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=32";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=32";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png');">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=19" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/rayman.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -122,18 +247,49 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=19";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=19";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png');">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=35" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/sekiro.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -143,14 +299,44 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=35";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=35";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
     </div>
   </div>
@@ -162,7 +348,8 @@ if(isset($_SESSION["userId"])){
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png'); ">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=30" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/mafia.jpg'); ">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -172,18 +359,49 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=30";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=30";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png');">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=33" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/minecraftdungeons.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -193,18 +411,49 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=33";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=33";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
 
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/residentevilvillageinicio.png');">
+      <a href="../templatesJuegos/juegoXbox.php?lang=es&idJ=28" style="text-decoration: none;">
+        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/Xbox/RED.jpg');">
           <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
             <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
             <ul class="d-flex list-unstyled mt-auto">
@@ -214,14 +463,44 @@ if(isset($_SESSION["userId"])){
               </svg>
               </li>
               <li class="d-flex align-items-center me-3">
-                <small>GAME X</small>
+                <small class="bg-dark text-white rounded-5"><?php
+                  require '../includes/dbh.inc.php';
+                  $stmt = mysqli_stmt_init($conn);
+                  $sql = "SELECT nombrejuego FROM productos WHERE id=28";
+                  mysqli_stmt_prepare($stmt, $sql);
+                  mysqli_stmt_execute($stmt);
+                  $resultado = mysqli_stmt_get_result($stmt);
+                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                    foreach ($fila as $f) {
+                      echo $f;
+                    }
+                    print "\n";
+                  }
+                  ?></small>
               </li>
               <li class="d-flex align-items-center">
-                <small>0.00€</small>
+                <small class="bg-dark text-white rounded-5"><?php
+
+                          require '../includes/dbh.inc.php';
+                          $stmt = mysqli_stmt_init($conn);
+                          $sql = "SELECT precio FROM productos WHERE id=28";
+
+                          mysqli_stmt_prepare($stmt, $sql);
+
+                          mysqli_stmt_execute($stmt);
+
+                          $resultado = mysqli_stmt_get_result($stmt);
+
+                          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                            foreach ($fila as $f) {
+                              echo "$f ";
+                            }
+                          }
+                          ?>€</small>
               </li>
             </ul>
           </div>
-        </div>
+        </div></a>
       </div>
     </div>
   </div>
