@@ -46,6 +46,9 @@ if (isset($_SESSION["userId"])) {
           }
         }
         ?>
+        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
+
       </div>
 
       <div class="col-md-6 align-items-center">
@@ -72,49 +75,109 @@ if (isset($_SESSION["userId"])) {
             }
             ?>
           </h1>
-          <div class="spacer"></div>
-          <div class="row align-items-center">
-            <h1 class="text-white titulomasvendidos">
 
-              <small>
-                <?php
-                $idJuego = $_GET['idJ'];
-                require '../includes/dbh.inc.php';
-                $stmt = mysqli_stmt_init($conn);
-                $sql = "SELECT precio FROM productos WHERE id=$idJuego";
+          <div class="row">
 
-                mysqli_stmt_prepare($stmt, $sql);
+            <div class="spacer"></div>
+            <div class="row align-items-center">
 
-                mysqli_stmt_execute($stmt);
 
-                $resultado = mysqli_stmt_get_result($stmt);
+              <div class="col">
+                <!-- php --> <?php
+                              $idJuego = $_GET['idJ'];
+                              require '../includes/dbh.inc.php';
+                              $stmt = mysqli_stmt_init($conn);
+                              $sql = "SELECT cantidad FROM productos WHERE id=$idJuego";
 
-                while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
-                  foreach ($fila as $f) {
-                    echo "$f";
-                  }
-                }
-                ?>
-                €</small>
-            </h1>
+                              mysqli_stmt_prepare($stmt, $sql);
+
+                              mysqli_stmt_execute($stmt);
+
+                              $resultado = mysqli_stmt_get_result($stmt);
+
+                              while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                                foreach ($fila as $f) {
+                                  echo '<h1 class="text-white titulomasvendidos"><small >Stock:', $f, '</small></h1>';
+                                }
+                              }
+                              ?>
+                <!-- php -->
+              </div>
+
+              <br>
+
+              <div class="col">
+                <h1 class="text-white titulomasvendidos"> <small>
+                    <!-- php --> <?php
+                                  $idJuego = $_GET['idJ'];
+                                  require '../includes/dbh.inc.php';
+                                  $stmt = mysqli_stmt_init($conn);
+                                  $sql = "SELECT precio FROM productos WHERE id=$idJuego";
+
+                                  mysqli_stmt_prepare($stmt, $sql);
+
+                                  mysqli_stmt_execute($stmt);
+
+                                  $resultado = mysqli_stmt_get_result($stmt);
+
+                                  while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+                                    foreach ($fila as $f) {
+                                      echo "$f";
+                                    }
+                                  }
+                                  ?>
+                    <!-- php -->
+
+                    €
+                  </small></h1>
+              </div>
+
+
+            </div>
 
           </div>
 
+
+
           <div class="minispacer"></div>
 
-          <?php 
-          $idJ = $_GET['idJ'];
 
-          if(isset($_SESSION["userId"])){
-            echo '<a href="../templatesPasarelaPago/pasarelaPago.php?idJ=',$idJ,'" class="text-reset">';
-            }else {
+
+          <div class="row">
+
+          <div class="col">
+            <?php
+            $idJ = $_GET['idJ'];
+
+            if (isset($_SESSION["userId"])) {
+              echo '<a href="../templatesPasarelaPago/pasarelaPago.php?idJ=', $idJ, '" class="text-reset">';
+            } else {
               echo '<a href="../php/login.php" class="text-reset">';
             }
-          ?>
-          
+            ?>
+
 
             <button class="btn btn-lg btn-dark naranja" type="button">Comprar Juego</button>
-          </a>
+            </a>
+
+            </div>
+
+            <div class="col">
+
+            <form action="../index.php">
+
+
+              <input type="number" class="">
+
+              <input class="btn btn-dark naranja px-4" type="submit" value="Añadir Stock">
+
+
+
+            </form>
+
+            </div>
+
+          </div>
 
         </div>
       </div>
@@ -125,18 +188,18 @@ if (isset($_SESSION["userId"])) {
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold naranjilla">Descripción</h1>
         <p class="col-md fs-4 text-white">
-        <?php
-          $lang=$_GET['lang'];
+          <?php
+          $lang = $_GET['lang'];
           $idJuego = $_GET['idJ'];
           require '../includes/dbh.inc.php';
           $stmt = mysqli_stmt_init($conn);
           if ($lang == "es") {
             $sql = "SELECT descripcionES FROM productos WHERE id=$idJuego";
-          }elseif ($lang=="en"){
+          } elseif ($lang == "en") {
             $sql = "SELECT descripcionEN FROM productos WHERE id=$idJuego";
-          }elseif($lang=="gr"){
+          } elseif ($lang == "gr") {
             $sql = "SELECT descripcionGR FROM productos WHERE id=$idJuego";
-          }elseif($lang="fr"){
+          } elseif ($lang = "fr") {
             $sql = "SELECT descripcionFR FROM productos WHERE id=$idJuego";
           }
           mysqli_stmt_prepare($stmt, $sql);
