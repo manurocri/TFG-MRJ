@@ -48,11 +48,7 @@ if (isset($_SESSION["userId"])) {
         ?>
         <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
         <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
       </div>
 
       <div class="col-md-6 align-items-center">
@@ -79,40 +75,8 @@ if (isset($_SESSION["userId"])) {
             }
             ?>
           </h1>
-<<<<<<< HEAD
 
           <div class="row">
-=======
-          
-          <div class="spacer"></div>
-          <div class="row align-items-center">
-            <h1 class="text-white titulomasvendidos">
-            <?php
-          $idJuego = $_GET['idJ'];
-          require '../includes/dbh.inc.php';
-          $stmt = mysqli_stmt_init($conn);
-          $sql = "SELECT cantidad FROM productos WHERE id=$idJuego";
-
-          mysqli_stmt_prepare($stmt, $sql);
-
-          mysqli_stmt_execute($stmt);
-
-          $resultado = mysqli_stmt_get_result($stmt);
-
-          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
-            foreach ($fila as $f) {
-              echo '<small>Stock:', $f, '</small>';
-            }
-          }
-          ?>
-          <br>
-              <small>
-                <?php
-                $idJuego = $_GET['idJ'];
-                require '../includes/dbh.inc.php';
-                $stmt = mysqli_stmt_init($conn);
-                $sql = "SELECT precio FROM productos WHERE id=$idJuego";
->>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
 
             <div class="spacer"></div>
             <div class="row align-items-center">
@@ -125,7 +89,6 @@ if (isset($_SESSION["userId"])) {
                               $stmt = mysqli_stmt_init($conn);
                               $sql = "SELECT cantidad FROM productos WHERE id=$idJuego";
 
-<<<<<<< HEAD
                               mysqli_stmt_prepare($stmt, $sql);
 
                               mysqli_stmt_execute($stmt);
@@ -171,17 +134,6 @@ if (isset($_SESSION["userId"])) {
 
 
             </div>
-=======
-                while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
-                  foreach ($fila as $f) {
-                    echo "$f";
-                  }
-                }
-                ?>
-                €</small>
-                
-            </h1>
->>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
 
           </div>
 
@@ -193,36 +145,34 @@ if (isset($_SESSION["userId"])) {
 
           <div class="row">
 
-          <div class="col">
-            <?php
-            $idJ = $_GET['idJ'];
+            <div class="col">
+              <?php
+              $idJ = $_GET['idJ'];
 
-            if (isset($_SESSION["userId"])) {
-              echo '<a href="../templatesPasarelaPago/pasarelaPago.php?idJ=', $idJ, '" class="text-reset">';
-            } else {
-              echo '<a href="../php/login.php" class="text-reset">';
-            }
-            ?>
+              if (isset($_SESSION["userId"])) {
+                echo '<a href="../templatesPasarelaPago/pasarelaPago.php?idJ=', $idJ, '" class="text-reset">';
+              } else {
+                echo '<a href="../php/login.php" class="text-reset">';
+              }
+              ?>
 
 
-            <button class="btn btn-lg btn-dark naranja" type="button">Comprar Juego</button>
-            </a>
+              <button class="btn btn-lg btn-dark naranja" type="button">Comprar Juego</button>
+              </a>
 
             </div>
 
             <div class="col">
-
-            <form action="../index.php">
-
-
-              <input type="number" class="">
-
-              <input class="btn btn-dark naranja px-4" type="submit" value="Añadir Stock">
-
-
-
-            </form>
-
+              <?php
+              $idJuego = $_GET['idJ'];
+              if (isset($_SESSION["userId"])) {
+                if ($_SESSION["userId"] == 1) {
+                   echo '<form action="../includes/reStock.php?idJ=', $idJuego, '&cantidad=1" method="post">
+                   <input class="btn btn-dark naranja px-4" type="submit" value="Añadir 1 de Stock">
+                   </form>';
+                }
+              }
+              ?>
             </div>
 
           </div>

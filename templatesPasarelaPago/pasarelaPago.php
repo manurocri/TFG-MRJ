@@ -23,7 +23,12 @@ if (isset($_SESSION["userId"])) {
 
 
     <hr class="my-1">
-
+    <?php
+    $idJ = $_GET['idJ'];
+    echo '<form action="./pasarelaPagoFinal.php?idJ=', $idJ,'" method="post">';
+    // echo '<a href="./pasarelaPagoFinal.php?idJ=', $idJ, '" style="text-decoration: none;>"';
+    ?>
+    
     <div class="row gy-3">
 
       <div class="col-md-6">
@@ -110,28 +115,7 @@ if (isset($_SESSION["userId"])) {
           }
           ?>
           €
-<<<<<<< HEAD
-          
-=======
-          <?php
-          $idJuego = $_GET['idJ'];
-          require '../includes/dbh.inc.php';
-          $stmt = mysqli_stmt_init($conn);
-          $sql = "SELECT cantidad FROM productos WHERE id=$idJuego";
 
-          mysqli_stmt_prepare($stmt, $sql);
-
-          mysqli_stmt_execute($stmt);
-
-          $resultado = mysqli_stmt_get_result($stmt);
-
-          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
-            foreach ($fila as $f) {
-              echo '<small>Stock:', $f, '</small>';
-            }
-          }
-          ?>
->>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
         </h1>
 
       </div>
@@ -139,29 +123,11 @@ if (isset($_SESSION["userId"])) {
 
     </div>
 
-
-
-
-
-
-
-
-
-
     <hr class="my-4">
-    <?php
-    $idJ = $_GET['idJ'];
-
-    echo '<a href="./pasarelaPagoFinal.php?idJ=', $idJ, '" style="text-decoration: none;>"';
+    
+    <input class="w-100 btn btn-dark naranja btn-lg" type="submit" value="Pagar" >
 
 
-    ?>
-    <button class="w-100 btn btn-dark naranja btn-lg" type="submit">
-      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-credit-card-2-back" viewBox="0 0 16 16">
-        <path d="M11 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1z" />
-        <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2zm13 2v5H1V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-1 9H2a1 1 0 0 1-1-1v-1h14v1a1 1 0 0 1-1 1z" />
-      </svg>
-      Pagar</button></a>
     </form>
 </div>
 </div>
@@ -174,4 +140,4 @@ if (isset($_SESSION["userId"])) {
 
 <div class="spacer"></div>
 
-<?php include("../templatesPlataformasCabecerayPie/piedepaginaFixed.php"); ?>
+<?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>

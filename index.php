@@ -67,7 +67,7 @@ if (isset($_SESSION["userId"])) {
           <div class="carousel-caption">
             <h1>Resident Evil Village</h1>
             <p>Un juego escalofriante</p>
-            <p><a class="btn btn-lg btn-dark naranja" href="">Cómpralo ya!</a></p>
+            <p><a class="btn btn-lg btn-dark naranja" href="./templatesJuegos/juegoPc.php?lang=es&idJ=56">Cómpralo ya!</a></p>
           </div>
         </div>
       </div>

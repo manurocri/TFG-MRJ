@@ -73,37 +73,6 @@ if (isset($_SESSION["userId"])) {
             }
             ?>
           </h1>
-<<<<<<< HEAD
-=======
-          <div class="spacer"></div>
-          <div class="row align-items-center">
-            <h1 class="text-white titulomasvendidos">
-            <?php
-          $idJuego = $_GET['idJ'];
-          require '../includes/dbh.inc.php';
-          $stmt = mysqli_stmt_init($conn);
-          $sql = "SELECT cantidad FROM productos WHERE id=$idJuego";
-
-          mysqli_stmt_prepare($stmt, $sql);
-
-          mysqli_stmt_execute($stmt);
-
-          $resultado = mysqli_stmt_get_result($stmt);
-
-          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
-            foreach ($fila as $f) {
-              echo '<small>Stock:', $f, '</small>';
-            }
-          }
-          ?>
-          <br>
-              <small>
-                <?php
-                $idJuego = $_GET['idJ'];
-                require '../includes/dbh.inc.php';
-                $stmt = mysqli_stmt_init($conn);
-                $sql = "SELECT precio FROM productos WHERE id=$idJuego";
->>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
 
           <div class="row">
 
@@ -189,16 +158,19 @@ if (isset($_SESSION["userId"])) {
 
             <div class="col">
 
-              <form action="../index.php">
-
-
-                <input type="number" class="">
-
-                <input class="btn btn-dark naranja px-4" type="submit" value="Añadir Stock">
-
-
-
-              </form>
+            <?php
+              
+              $idJuego = $_GET['idJ'];
+              if (isset($_SESSION["userId"])) {
+                if ($_SESSION["userId"] == 1) {
+                   echo '<form action="../includes/reStock.php?idJ=', $idJuego, '&cantidad=1" method="post">
+                   <input class="btn btn-dark naranja px-4" type="submit" value="Añadir 1 de Stock">
+                   </form>';
+                   
+                  
+                }
+              }
+              ?>
 
             </div>
 

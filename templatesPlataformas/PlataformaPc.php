@@ -636,7 +636,7 @@ if (isset($_SESSION["userId"])) {
       <?php
       require '../includes/dbh.inc.php';
       $stmt = mysqli_stmt_init($conn);
-      $sql = "SELECT cantidad FROM productos WHERE id=15";
+      $sql = "SELECT cantidad FROM productos WHERE id=56";
       mysqli_stmt_prepare($stmt, $sql);
       mysqli_stmt_execute($stmt);
       $resultado = mysqli_stmt_get_result($stmt);
@@ -645,19 +645,19 @@ if (isset($_SESSION["userId"])) {
 
           if (isset($_SESSION["userId"])) {
             if ($f > 0 || $_SESSION["userId"] == 1) {
-              echo '<a href="../templatesJuegos/juegoPc.php?lang=es&idJ=15" style="text-decoration: none;">';
+              echo '<a href="../templatesJuegos/juegoPc.php?lang=es&idJ=56" style="text-decoration: none;">';
             } else if ($f < 1) {
               echo '<a>';
             };
           } else if ($f > 0) {
-            echo '<a href="../templatesJuegos/juegoPc.php?lang=es&idJ=15" style="text-decoration: none;">';
+            echo '<a href="../templatesJuegos/juegoPc.php?lang=es&idJ=56" style="text-decoration: none;">';
           } else if ($f < 1) {
             $userId = 0;
             echo '<a>';
           };
         }
       }; ?>
-      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/ages.jpg'); ">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('../img/pc/resident.png'); ">
 
         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
           <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h2>
@@ -666,7 +666,7 @@ if (isset($_SESSION["userId"])) {
             <?php
               require '../includes/dbh.inc.php';
               $stmt = mysqli_stmt_init($conn);
-              $sql = "SELECT cantidad FROM productos WHERE id=15";
+              $sql = "SELECT cantidad FROM productos WHERE id=56";
               mysqli_stmt_prepare($stmt, $sql);
               mysqli_stmt_execute($stmt);
               $resultado = mysqli_stmt_get_result($stmt);
@@ -689,7 +689,7 @@ if (isset($_SESSION["userId"])) {
                 <?php
                 require '../includes/dbh.inc.php';
                 $stmt = mysqli_stmt_init($conn);
-                $sql = "SELECT nombrejuego FROM productos WHERE id=15";
+                $sql = "SELECT nombrejuego FROM productos WHERE id=56";
                 mysqli_stmt_prepare($stmt, $sql);
                 mysqli_stmt_execute($stmt);
                 $resultado = mysqli_stmt_get_result($stmt);
@@ -708,7 +708,7 @@ if (isset($_SESSION["userId"])) {
 
                 require '../includes/dbh.inc.php';
                 $stmt = mysqli_stmt_init($conn);
-                $sql = "SELECT precio FROM productos WHERE id=15";
+                $sql = "SELECT precio FROM productos WHERE id=56";
 
                 mysqli_stmt_prepare($stmt, $sql);
 
