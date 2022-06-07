@@ -79,4 +79,4 @@ if(isset($_SESSION["userId"])){
 
 
 
-<?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>
+<?php include("../templatesPlataformasCabecerayPie/piedepaginaFixed.php"); ?>

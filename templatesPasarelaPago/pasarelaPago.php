@@ -110,7 +110,28 @@ if (isset($_SESSION["userId"])) {
           }
           ?>
           €
+<<<<<<< HEAD
           
+=======
+          <?php
+          $idJuego = $_GET['idJ'];
+          require '../includes/dbh.inc.php';
+          $stmt = mysqli_stmt_init($conn);
+          $sql = "SELECT cantidad FROM productos WHERE id=$idJuego";
+
+          mysqli_stmt_prepare($stmt, $sql);
+
+          mysqli_stmt_execute($stmt);
+
+          $resultado = mysqli_stmt_get_result($stmt);
+
+          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+            foreach ($fila as $f) {
+              echo '<small>Stock:', $f, '</small>';
+            }
+          }
+          ?>
+>>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
         </h1>
 
       </div>
@@ -153,4 +174,4 @@ if (isset($_SESSION["userId"])) {
 
 <div class="spacer"></div>
 
-<?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>
+<?php include("../templatesPlataformasCabecerayPie/piedepaginaFixed.php"); ?>

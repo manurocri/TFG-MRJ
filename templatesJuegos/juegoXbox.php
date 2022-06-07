@@ -73,7 +73,39 @@ if (isset($_SESSION["userId"])) {
             }
             ?>
           </h1>
+<<<<<<< HEAD
           <div class="row">
+=======
+          <div class="spacer"></div>
+          <div class="row align-items-center">
+            <h1 class="text-white titulomasvendidos">
+            <?php
+          $idJuego = $_GET['idJ'];
+          require '../includes/dbh.inc.php';
+          $stmt = mysqli_stmt_init($conn);
+          $sql = "SELECT cantidad FROM productos WHERE id=$idJuego";
+
+          mysqli_stmt_prepare($stmt, $sql);
+
+          mysqli_stmt_execute($stmt);
+
+          $resultado = mysqli_stmt_get_result($stmt);
+
+          while ($fila = $resultado->fetch_array(MYSQLI_NUM)) {
+            foreach ($fila as $f) {
+              echo '<small>Stock:', $f, '</small>';
+            }
+          }
+          ?>
+          <br>
+              <small>
+                
+                <?php
+                $idJuego = $_GET['idJ'];
+                require '../includes/dbh.inc.php';
+                $stmt = mysqli_stmt_init($conn);
+                $sql = "SELECT precio FROM productos WHERE id=$idJuego";
+>>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
 
 <div class="spacer"></div>
 <div class="row align-items-center">
@@ -135,6 +167,7 @@ if (isset($_SESSION["userId"])) {
 </div>
 
           <div class="minispacer"></div>
+<<<<<<< HEAD
           <div class="row">
 
 <div class="col">
@@ -170,6 +203,18 @@ if (isset($_SESSION["userId"])) {
   </div>
 
 </div>
+=======
+          <?php
+          $idJ = $_GET['idJ'];
+          if (isset($_SESSION["userId"])) {
+            echo '<a href="../templatesPasarelaPago/pasarelaPago.php?idJ=', $idJ, '" class="text-reset">';
+          } else {
+            echo '<a href="../php/login.php" class="text-reset">';
+          }
+          ?>
+          <button class="btn btn-lg btn-dark naranja" type="button">Comprar Juego</button>
+          </a>
+>>>>>>> bd5765212d5507020a0f2fcd72d230eba126e6ec
 
         </div>
       </div>
