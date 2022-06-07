@@ -58,5 +58,4 @@ Si pruebas tú también con este plazo, ya está bien. Pero ¿quieres rizar el r
 
 
 
-
-<?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>
+<?php include("../templatesPlataformasCabecerayPie/piedepaginaFixed.php"); ?>

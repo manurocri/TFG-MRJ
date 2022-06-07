@@ -51,4 +51,4 @@ No aplicable a pedidos con artículos de otras webs: Supermercado, Primeriti, et
 
 
 
-<?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>
+<?php include("../templatesPlataformasCabecerayPie/piedepaginaFixed.php"); ?>

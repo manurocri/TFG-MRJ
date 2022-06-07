@@ -47,4 +47,4 @@ Tanto si se trata de envíos nacionales como internacionales, una buena polític
 
 
 
-<?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>
+<?php include("../templatesPlataformasCabecerayPie/piedepaginaFixed.php"); ?>

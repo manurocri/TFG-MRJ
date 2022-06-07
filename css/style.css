@@ -16,6 +16,14 @@
     color: #FF5B0F;
 }
 
+.verdecillo{
+    color: #2bff0f;
+}
+
+.rojillo{
+    color: rgb(255, 42, 0);
+}
+
 /* Tipo de letra titulo */
 .titulomasvendidos{
   font-family:  sans-serif;

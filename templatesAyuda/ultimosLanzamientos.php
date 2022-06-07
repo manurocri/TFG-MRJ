@@ -53,4 +53,4 @@ Métodos de Pago: Utilizamos sistemas de pago seguros para proteger la seguridad
 
 
 
-<?php include("../templatesPlataformasCabecerayPie/piedepagina.php"); ?>
+<?php include("../templatesPlataformasCabecerayPie/piedepaginaFixed.php"); ?>
